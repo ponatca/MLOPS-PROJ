@@ -1,0 +1,45 @@
+[project]
+name = "mlops-proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pon", email = "127575647+ponatca@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.43.103",
+    "botocore>=1.43.103",
+    "certifi>=2026.7.22",
+    "dill>=0.4.1",
+    "fastapi>=0.141.1",
+    "from-root>=1.3.0",
+    "imblearn>=0.0",
+    "ipykernel>=7.3.0",
+    "jinja2>=3.1.6",
+    "matplotlib>=3.11.2",
+    "mypy-boto3-s3>=1.43.93",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pathlib>=1.0.1",
+    "plotly>=7.1.0",
+    "pymongo>=4.18.2",
+    "python-multipart>=0.0.32",
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "setuptools>=84.0.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+mlops-proj = "mlops_proj:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "types-setuptools>=84.0.0.20260812",
+]
